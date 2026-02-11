@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-style.css" media="screen and (max-width: 580px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body  onresize="mudouTamanho()">
+    <header>
+        <div id="conteiner">
+            <h1>Site</h1>
+            <span id="icon" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        </div>
+        <nav id="menu">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores expedita nihil dolorum enim illum? Veniam qui fugit, laudantium rerum vero deleniti maiores ad, officiis obcaecati, optio distinctio in odit exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor adipisci suscipit tempore, pariatur ex praesentium, minima maiores nihil sunt facilis iusto tempora iste quam dolores corporis quasi natus! Incidunt!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facere corrupti dolore, iste praesentium maxime vitae reprehenderit reiciendis officia maiores, sed vero quisquam corporis nobis libero quidem, autem sit nemo?</p>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if (menu.style.display == 'flex'){
+                menu.style.display='none'
+            }
+            else{
+                menu.style.display='flex'
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 580){
+                menu.style.display='flex'
+            }else{
+                menu.style.display='none'
+        }
+        }
+    </script>
+</body>
+</html>
